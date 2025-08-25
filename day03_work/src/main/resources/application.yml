@@ -1,0 +1,30 @@
+spring:
+  devtools:
+    restart:
+      exclude: static/**,public/**,templates/**
+  profiles:
+    active: prod
+com:
+  xzit:
+    model:
+      teacher:
+        teacher-name: 张三
+        teacher-gender: 男
+        teacher-age: 30
+        students:
+          - student-name: 李四
+            student-gender: 男
+            student-age: ${random.int(15,18)}
+            scores:
+              Chinese: ${random.int(80,90)}
+              Math: ${random.int(70,80)}
+              English: ${random.int(90,100)}
+          - student-name: 王五
+            student-gender: 女
+            student-age: ${random.int(15,18)}
+            scores:
+              Chinese: ${random.int(80,90)}
+              Math: ${random.int(70,80)}
+              English: ${random.int(90,100)}
+
+

@@ -1,0 +1,9 @@
+com:
+  xzit:
+    model:
+      users:
+        id: 1
+        name: "李四"
+        gender: 男
+        age: 22
+        birthday: 2000/01/01
